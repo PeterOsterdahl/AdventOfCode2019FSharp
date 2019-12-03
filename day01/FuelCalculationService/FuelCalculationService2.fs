@@ -1,11 +1,11 @@
 namespace FuelCalculationService2
 
 module FuelCalculation =
-    let FromMass(mass: int) =
+    let rec FromMass(mass: int) =
         let fuel = mass / 3 - 2
         match fuel with
         | i when i <= 0 -> 0
-        | _ -> fuel
+        | _ -> fuel + FromMass fuel
 
     let rec FromListOfMass l =
         match l with

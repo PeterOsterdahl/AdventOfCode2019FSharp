@@ -10,9 +10,7 @@ let NotRoundedCaluclationIsCorrect() =
 
     Assert.Equal(expected, actual)
 
-
-
-type ``Given a mass of m``() =
+type ``Given a FuelCalculationService1 and a mass of m``() =
     [<Theory>]
     [<InlineData(12, 2)>]
     [<InlineData(14, 2)>]
