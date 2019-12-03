@@ -190,21 +190,3 @@ let ``Mult test``() =
     let actual = tryfunc 0 0 av
 
     actual |> should (equal) expected
-(*
-[<Fact>]
-let ``Add test``() =
-    let a = [ 1; 2; 2; 5; 1; 1; 1; 2; 99 ]
-
-    let av = [ 0 .. (List.length a) - 1 ] |> List.map (fun v -> (v, a.[v]))
-
-    let c = Reprogrammer.add 0 av
-    c.[5] |> should (equal) 4
-
-let a = [1;2;2;5;1;1;1;2;99]
-
-let av = [0..(List.length a)-1] |> List.map( fun (v)-> (v, a.[v]))
-
-let b = prog 0 av
-let c = Add 2 av;;
-;;c
-*)
